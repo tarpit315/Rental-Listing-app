@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="/navbar.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<nav class="navbar navbar-expand-md bg-body-tertiary border-bottom sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../listing/index.ejs" style="color: #ff385c; font-size: 1.5rem; font-weight: 700;">
+      <i class="fa-brands fa-airbnb"></i> WonderLust
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <form class="d-flex search-btn" role="search">
+          <input class="form-control me-2 search-input" type="search" placeholder="Search destinations" aria-label="Search">
+          <button class="btn btn-search" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+
+      <div class="navbar-nav ms-auto align-items-center">
+        <a  method ="get" class="nav-link fw-bold" href="/listing/new">Airbnb your home</a>
+        <div class="nav-link dropdown">
+            <button class="btn btn-light border rounded-pill dropdown-toggle profile-menu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars me-2"></i>
+                <i class="fa-solid fa-circle-user fa-xl"></i>
+            </button>
+          
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="../listing/index.ejs">Home</a></li>
+            <li><a class="dropdown-item" href="#">Help Center</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#"><b>Sign up</b></a></li>
+            <li><a class="dropdown-item" href="#">Log in</a></li>
+           
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
