@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listings</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h1>All Listings</h1>
+
+<div class="container">
+
+  <% allListing.forEach((item) => { %>
+    <a href="/listing/<%= item._id %>" >
+        <div class="card">
+            <img src="<%= item.image.url %>" alt="listing image">
+      
+            <h2><%= item.title %></h2>
+      
+            <p><%= item.description %></p>
+      
+            <p class="price">₹ <%= item.price %></p>
+      
+            <p class="location">
+              <%= item.location %>, <%= item.country %>
+            </p>
+            
+          </div>
+    </a>
+    
+
+  <% }) %>
+  
+</div>
+<form method="get" action="/listing/new">
+    <button class="add">ADD NEW</button>
+</form>
+</body>
+</html>
