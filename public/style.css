@@ -1,9 +1,18 @@
 /* Search Button Styling */
+body{
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400 !important;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+
+}
 .btn-search {
-    background-color: #ff385c;
+    background-color: #ff385c ;
     color: white;
-    border-radius: 50%;
-    padding: 0.5rem 0.8rem;
+    border-radius: 50% !important;
+    padding: 0.5rem 0.8rem !important;
 }
 
 .btn-search:hover {
@@ -13,7 +22,7 @@
 
 .search-input {
     border-radius: 25px;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1.5rem ;
     box-shadow: 0 1px 2px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
 }
 
@@ -33,14 +42,18 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    color: #e31c5f; 
+   
 }
+.navbar-brand:hover{
+    color: #e31c5f !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
 /* style.css mein add karein */
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-}
+
 
 /* 2. Footer Styling */
 footer {
@@ -60,4 +73,22 @@ footer {
 .f-info-links a:hover {
     text-decoration: underline !important;
     color: #000;
+}
+.card{
+    border: none !important;
+    margin-top: 2rem;
+    padding: 2px;
+}
+.card :hover{
+    opacity: 0.8 ;
+    background-color: white;
+}
+
+.card-img-top{
+    border-radius: 2rem;
+    object-fit: cover !important;
+    height: 20rem;
+}
+.card-body{
+    padding: 0rem !important;
 }
