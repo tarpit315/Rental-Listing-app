@@ -34,3 +34,30 @@
     align-items: center;
     gap: 5px;
 }
+/* style.css mein add karein */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+/* 2. Footer Styling */
+footer {
+    background-color: #f8f9fa;
+}
+
+.f-info {
+    font-size: 0.9rem; 
+}
+
+.f-info-socials a:hover i {
+    color: #ff385c;
+    transform: scale(1.1); 
+    transition: 0.2s all ease;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline !important;
+    color: #000;
+}
